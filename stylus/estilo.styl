@@ -1,45 +1,55 @@
-@import "simplegrid.css"
+@import 'nib/vendor'
+@import "simplegrid.styl"
+vendor-prefixes = o ms moz webkit
+border-radius()
+	-webkit-border-radius arguments
+	-moz-border-radius arguments
+	ms-border-radius arguments
+	o-border-radius arguments
+	border-radius arguments
+appearance()
+	-webkit-appearance arguments
+	-moz-appearance arguments
+	ms-appearance arguments
+	o-appearance arguments
+	appearance arguments
+box-shadow()
+	-webkit-box-shadow arguments
+	-moz-box-shadow arguments
+	ms-box-shadow arguments
+	o-box-shadow arguments
+	box-shadow arguments
+transform()
+	-webkit-transform arguments
+	-moz-transform arguments
+	ms-transform arguments
+	o-transform arguments
+	transform arguments
+body
+	background-color #000
+*
+	margin 0
 .todo
-	width 1000px
-	background black
-	margin 0px auto
-.cabe
 	width 100%
-	background #B7BCC0
+.cabecera
+	background-color #B7BCC0
+	width 100%
 	display inline-block
-	.img1,.img2
-		text-align center
-		width 150px
-		img 
+	padding 0px
+.centro
+	text-align center
+.logo
+	width 200px
+	margin 0px auto
+	padding 5px
+	a
+		text-decoration none
+		img
 			width 100%
-	.img1
-		float left
-
-	.img2
-		float right
 .medio
 	width 100%
-	display inline-block
-	height 400px
-	background url(../img/logo3.jpg) no-repeat center
-	.login
-		margin 20px 20px 0px 20px
-		background skyblue
-		float right
-		.nomb,.contra
-			text-align left
-	.red
-		margin 0px 0px 0px 20px
-		text-align left
-		width 100px
-		img
-			width 50%
-.ultimasnot
-	text-align left
-	width 100%
-	background #2D6586
-.noticias
-	text-align right
-
-
-
+	.imagen
+		width 100%
+		position absolute
+	.pgrid
+		position relative

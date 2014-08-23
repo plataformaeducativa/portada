@@ -1,26 +1,46 @@
 <!DOCTYPE html>
-html(lang="en")
+html(lang="es")
 	head
 		meta(charset="UTF-8")
-		title Document
+		title Plataforma Educativa
+		link(rel="shortcut icon", href="img/favicon.png")
 		link(rel="stylesheet", href="css/estilo.css")
 	body
 		.todo
-			.cabe
-				.img1
-					img(src="img/logo1.jpg", title="logo1")
-				.img2
-					img(src="img/logo2.jpg", title="logo2")
+			header.grid.grid-pad.cabecera
+				.col-3-12.centro
+					.logo
+						a(href="#")
+							img(src="img/logo_plataforma.png")
+				.col-6-12
+					&nbsp;
+				.col-3-12.centro
+					.logo
+						a(href="#")
+							img(src="img/logo_utp.png")
 			.medio
-				.login
-					.nomb
-						h4 Nombre de Usuario
-						input(type="text" title="usuario")
-						h4 Contraseña
-					.contra
-						input(type="pasword" title="contraseña" class="contraseña")
-				.red
-					img(src="", title="logo3")
+				img(src="img/portada.jpg", class="imagen")
+				.grid.grid-pad.pgrid
+					.col-1-12
+						&nbsp;
+					.col-8-12
+						&nbsp;
+					.col-3-12
+						.login
+							.nomb
+								h4 Nombre de Usuario
+								input(type="text" title="usuario")
+								h4 Contraseña
+							.contra
+								input(type="pasword" title="contraseña" class="contraseña")
+				.grid.grid-pad.pgrid
+					.col-1-12
+						.red
+							img(src="", title="logo3")
+					.col-8-12
+						&nbsp;
+					.col-3-12
+						&nbsp;
 			.ultimasnot
 				h4 ultimas noticias
 			.notcias
