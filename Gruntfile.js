@@ -32,7 +32,7 @@ module.exports = function (grunt) {
 			},
 			//observar de stylus
 			stylesheets: {
-				files: ['stylus/estilo.styl', 'css/estilo.css'],
+				files: ['stylus/*.styl'],
 				tasks: ['stylus']
 			},
             //observar el jade

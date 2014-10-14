@@ -6,46 +6,54 @@ html(lang="es")
 		link(rel="shortcut icon", href="img/favicon.png")
 		link(rel="stylesheet", href="css/estilo.css")
 	body
-		.todo
-			header.grid.cabecera
-				.col-3-12.centro
-					.logo
+		header
+			.cabecera
+				.grid.todo-1
+					.col-3-12
+						.logo-1
+							a(href="#")
+								img(src="img/logo_plataforma.png")
+					.col-6-12
+						&nbsp;
+					.col-3-12
+						&nbsp;
+
+			.cuerpo
+				.grid.todo-2
+					.logo-2
 						a(href="#")
-							img(src="img/logo_plataforma.png")
-				.col-6-12
-					&nbsp;
-				.col-3-12.centro
-					&nbsp;
-			.medio
-				.grid.menos
-					.col-2-12.menor
-						&nbsp;
-					.col-7-12.menor
-						&nbsp;
-					.col-3-12.logingri
-						.login
-							form(action="")
-							.entrar.tabla
-								span.texte Entrar
-							.tabla
-								h7 Nombre de Usuario
-								input(type="text" title="usuario" class="input")
-								h7 Contraseña
-								input(type="password" title="contraseña" class="input")
-							.tabla.centro
-								input(type="submit" class="boton" value="Entrar")
-							.peq1
-								span ¿Has Olvidado tu contraseña?
-				.grid.palto
+								img(src="img/portada.jpg")
+						.col-4-12
+							&nbsp;
+						.col-4-12.menor
+							&nbsp;
+						.col-4-12
+							.login
+								form(action="inicio.php")
+								.entrar.tabla
+									span.texte Ingresar
+								.tabla
+									h7 Nombre de Usuario
+									input(type="text" title="usuario" class="input")
+									h7 Contraseña
+									input(type="password" title="contraseña" class="input")
+								.tabla.centro
+									input(type="submit" class="boton" value="Entrar")
+								.peq1
+									a(href="#")
+										span ¿Has Olvidado tu contraseña?
+				.grid
 					.col-1-12
 						.red
-							img(src="img/logo_red.png")
+							a(href="#")
+								img(src="img/logo_red.png")
 					.col-8-12
 						&nbsp;
 					.col-3-12
 						&nbsp;
+
 			.ultimasnot
-				.grid
+				.grid.todo-3
 					.col-3-12
 						span ultimas noticias
 					.col-8-12
@@ -53,62 +61,64 @@ html(lang="es")
 					.col-1-12
 						&nbsp;
 			.noticias
-				.grid.abajo
-					.col-4-12
-						.grid.abajo
-							.col-6-12
-								.imag_gran
-									a(href="#")
-										img(src="img/imagen_G2.jpg", class="img_ultimo")
-							.col-6-12
-								.imag_peque
-									a(href="#")
-										img(src="img/imagen_P1.jpg", class="ultimo")
-									.textnom
-										a(href="")
-											h5 Ruthmery Geraldine
-								.texttitu
-									h3 Campeona en Kumite
-								.textdesc
-									p El presente campeontato se realizo en el pais vecino de Chile, quedando nuestra alumna como campeonta en la categoria mayores avanzados.
-								.textpeq
-									h7 fecha
-					.col-4-12
-						.grid.abajo
-							.col-6-12
-								.imag_gran
-									a(href="#")
-										img(src="img/imagen_G2.jpg", class="img_ultimo")
-							.col-6-12
-								.imag_peque
-									a(href="#")
-										img(src="img/imagen_P1.jpg", class="ultimo")
-									.textnom
-										a(href="")
-											h5 Ruthmery Geraldine
-								.texttitu
-									h3 Campeona en Kumite
-								.textdesc
-									p El presente campeontato se realizo en el pais vecino de Chile, quedando nuestra alumna como campeonta en la categoria mayores avanzados.
-								.textpeq
-									h7 fecha
-					.col-4-12
-						.grid.abajo
-							.col-6-12
-								.imag_gran
-									a(href="#")
-										img(src="img/imagen_G2.jpg", class="img_ultimo")
-							.col-6-12
-								padding-right 7px
-								.imag_peque
-									a(href="#")
-										img(src="img/imagen_P1.jpg", class="ultimo")
-									.textnom
-										a(href="")
-											h5 Ruthmery Geraldine
-								.texttitu
-									h3 Campeona en Kumite
-								.textdesc
-									p El presente campeontato se realizo en el pais vecino de Chile, quedando nuestra alumna como campeonta en la categoria mayores avanzados.
-								.textpeq
-									h7 fecha
+				.grid.todo-4
+					.col-4-12.pri
+						.col-6-12.img_gran
+							a(href="#")
+								img(src="img/imagen_G2.jpg", class="img_ultimo_1")
+						.col-6-12.img_peq
+							.col-4-12.div_1
+								a(href="#")
+									img(src="img/imagen_P1.jpg", class="img_ultimo_2")
+							.col-8-12.div_2
+								.textnom
+									a(href="")
+										h5 Ruthmery Geraldine
+							.texttitu
+								h3 Campeona en Kumite
+							.textdesc
+								p El presente campeontato se realizo en el pais vecino de Chile, quedando nuestra alumna como campeonta en la categoria mayores avanzados.
+							.textpeq
+								h7 fecha
+					.col-4-12.sec
+						.col-6-12.img_gran
+							a(href="#")
+								img(src="img/imagen_G2.jpg", class="img_ultimo_1")
+						.col-6-12.img_peq
+							.col-4-12.div_1
+								a(href="#")
+									img(src="img/imagen_P1.jpg", class="img_ultimo_2")
+							.col-8-12.div_2
+								.textnom
+									a(href="")
+										h5 Ruthmery Geraldine
+							.texttitu
+								h3 Campeona en Kumite
+							.textdesc
+								p El presente campeontato se realizo en el pais vecino de Chile, quedando nuestra alumna como campeonta en la categoria mayores avanzados.
+							.textpeq
+								h7 fecha
+					.col-4-12.ter
+						.col-6-12.img_gran
+							a(href="#")
+								img(src="img/imagen_G2.jpg", class="img_ultimo_1")
+						.col-6-12.img_peq
+							.col-4-12.div_1
+								a(href="#")
+									img(src="img/imagen_P1.jpg", class="img_ultimo_2")
+							.col-8-12.div_2
+								.textnom
+									a(href="")
+										h5 Ruthmery Geraldine
+							.texttitu
+								h3 Campeona en Kumite
+							.textdesc
+								p El presente campeontato se realizo en el pais vecino de Chile, quedando nuestra alumna como campeonta en la categoria mayores avanzados.
+							.textpeq
+								h7 fecha
+
+
+
+
+					
+
